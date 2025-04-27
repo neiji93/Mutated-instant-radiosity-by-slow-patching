@@ -19,3 +19,12 @@ void scene3dcloudsarraytiling(texture bufferthreed, int nbtiles, float modelqual
   //use arrayone to do cohomology
 
 }
+
+
+float gettrandmission(texture,texture,xy)
+{
+ //as we used luminous values zbove two times
+//we can simply add the both terms below.
+return tx1.xy + tx2.xy;
+
+}
